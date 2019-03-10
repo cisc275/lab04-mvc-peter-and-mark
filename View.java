@@ -43,10 +43,11 @@ public class View extends JPanel {
     }
     
     public void paint(Graphics g) { 
-    	
+    	//g.drawImage(pics[picNum][3], 0, 0, Color.gray, this);
     }
     
     public void update(int x, int y, int dir) {
+    	System.out.println(x +" " + y + " " + dir + " " + this.getGraphics());
     	this.getGraphics().drawImage(pics[picNum][dir], x, y, Color.gray, this);
     }
     

@@ -79,8 +79,10 @@ public class Animation extends JPanel {
 
     //Make frame, loop on repaint and wait
     public static void main(String[] args) {
+    	Controller c = new Controller();
+    	c.start();
         JFrame frame = new JFrame();
-        frame.getContentPane().add(new Animation());
+        frame.getContentPane().add(new View());
         frame.setBackground(Color.gray);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(frameWidth, frameHeight);
