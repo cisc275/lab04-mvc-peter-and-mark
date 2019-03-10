@@ -87,16 +87,16 @@ public class View extends JPanel {
 	public int getFrameCount() {
 		return frameCount;
 	}
-	public static int getFramewidth() {
+	public static int getFrameWidth() {
 		return frameWidth;
 	}
-	public static int getFrameheight() {
+	public static int getFrameHeight() {
 		return frameHeight;
 	}
-	public static int getImgwidth() {
+	public static int getImageWidth() {
 		return imgWidth;
 	}
-	public static int getImgheight() {
+	public static int getImageHeight() {
 		return imgHeight;
 	}
 
