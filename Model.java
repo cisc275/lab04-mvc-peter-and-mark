@@ -8,3 +8,12 @@
  * provide direction
  * provide location
  **/
+
+public class Model {
+	
+	public Model(int xx, int yy, int imgW, int igH) {
+		
+		
+	}
+	
+}
