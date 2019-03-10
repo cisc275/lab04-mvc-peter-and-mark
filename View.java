@@ -27,6 +27,12 @@ public class View extends JPanel {
     final static int imgHeight = 165;
     
     public View() {
+    	JFrame frame = new JFrame();
+        frame.getContentPane().add(this);
+        frame.setBackground(Color.gray);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(frameWidth, frameHeight);
+        frame.setVisible(true);
     	String[] arrOfStr = {"forward_north", "forward_northeast", "forward_east", "forward_southeast",
                 "forward_south", "forward_southwest", "forward_west", "forward_northwest"};
         BufferedImage[] img = createImage(arrOfStr);
@@ -48,6 +54,7 @@ public class View extends JPanel {
     
     public void update(int x, int y, int dir) {
     	System.out.println(x +" " + y + " " + dir + " " + this.getGraphics());
+    	picNum = (picNum + 1 )% frameCount;
     	this.getGraphics().drawImage(pics[picNum][dir], x, y, Color.gray, this);
     }
     
