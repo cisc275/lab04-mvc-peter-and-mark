@@ -19,6 +19,12 @@ public class Controller {
 			model.updateLocationAndDirection();
 			//update the view
 			view.update(model.getX(), model.getY(), model.getDirect());
+			try {
+				Thread.sleep(50);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 	}
 }

@@ -53,7 +53,7 @@ public class View extends JPanel {
     }
     
     public void update(int x, int y, int dir) {
-    	System.out.println(x +" " + y + " " + dir + " " + this.getGraphics());
+    	//System.out.println(x +" " + y + " " + dir + " " + this.getGraphics());
     	picNum = (picNum + 1 )% frameCount;
     	this.getGraphics().drawImage(pics[picNum][dir], x, y, Color.gray, this);
     }

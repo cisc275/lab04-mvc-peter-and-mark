@@ -32,8 +32,8 @@ public class Model {
 	}
 	
 	public void updateLocationAndDirection() {
-		
-        if(xloc > (frameWidth - imgWidth) || xloc < 0) {
+		//System.out.println(frameWidth - imgWidth);
+        if(xloc > (imgWidth - frameWidth) || xloc < 0) {
         	switch(dir) {
 	        	case 1:
 	        		dir = 7;
@@ -51,7 +51,7 @@ public class Model {
         	xChg = -1*xChg;
         	
         }
-        if(yloc > (frameHeight - imgHeight) || yloc < 0) {
+        if(yloc > (imgHeight - frameHeight) || yloc < 0) {
 
         	yChg = -1*yChg;
         	switch(dir) {

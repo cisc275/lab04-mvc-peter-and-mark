@@ -31,6 +31,7 @@ public class Animation extends JPanel {
     //Override this JPanel's paint method to cycle through picture array and draw images
     public void paint(Graphics g) {
         picNum = (picNum + 1) % frameCount;
+        System.out.println(frameWidth - imgWidth);
         if(xloc > (frameWidth - imgWidth) || xloc < 0) {
         	switch(dir) {
 	        	case 1:
